@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire JS</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=" col-6 container text-center gap-4">
+        <div class="d-flex align-content-center align-items-center justify-content-center my-3">
+            <h2 class="text-center mx-3 my-3"> TP : Calculatrice </h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                    height="30" viewBox="0 0 24 24">
+                    <path
+                        d="M13 24h6c2.762 0 5-2.239 5-5v-6h-11v11zm3-7h5v1h-5v-1zm0 2h5v1h-5v-1zm-16 0c0 2.761 2.239 5 5 5h6v-11h-11v6zm3-1h2v-2h1v2h2v1h-2v2h-1v-2h-2v-1zm16-18h-6v11h11v-6c0-2.761-2.238-5-5-5zm-.5 3c.276 0 .5.224.5.5s-.224.5-.5.5-.5-.224-.5-.5.224-.5.5-.5zm0 5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5zm2.5-2h-5v-1h5v1zm-21-1v6h11v-11h-6c-2.761 0-5 2.239-5 5zm6.914-1.622l.708.708-1.415 1.414 1.414 1.414-.707.707-1.414-1.414-1.414 1.414-.708-.707 1.414-1.414-1.414-1.414.707-.707 1.415 1.414 1.414-1.415z" />
+                </svg>
+        </div>
+
+        <form class="calculatrice gap-3 text-end" action="">
+
+            <div class="form-group container-sm d-flex flex-wrap flex-sm-nowrap justify-content-evenly mt-3 my-3 gap-2 ">
+                <input class="form-control text-center" id="number" type="number" placeholder="1 er nombre"
+                    name="first_number">
+                <select class="form-select text-center" name="operator" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/">/</option>
+                    <option value="*">*</option>
+                </select>
+                <input class="form-control text-center" type="number" name="second_number" id="number1"
+                    placeholder="2 ème nombre">
+                <button class="btn btn-primary calc" type="submit">Calculer</button>
+            </div>
+        </form>
+        <p class="resultat h4"></p>
+        <p class="com" style="height: 2rem;"></p>
+        <button class="visible col-12 col-sm-5 text-center btn btn-sm  my-2 mx-2 btn-primary">Faire apparaître la calculatrice</button>
+        <button class="none col-12 col-sm-5 text-center btn btn-sm btn-secondary my-2 mx-2">Faire disparaître la calculatrice</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
