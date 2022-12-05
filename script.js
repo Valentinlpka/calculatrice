@@ -63,3 +63,6 @@ number1.addEventListener("mouseenter", () => {
 number1.addEventListener("mouseleave", () => {
   comment.textContent = "";
 });
+
+
+// Ajout git
